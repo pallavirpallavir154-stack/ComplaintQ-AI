@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<nav style="
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    padding:15px;
+    background:rgba(0,0,0,0.3);
+    backdrop-filter:blur(10px);
+">
+    <a href="index.html" style="color:white">Home</a>
+    <a href="submit.html" style="color:white">Submit</a>
+    <a href="track.html" style="color:white">Track</a>
+    <a href="complaints.html" style="color:white">Dashboard</a>
+</nav>
+</head>
+<body>
+
+
+
+<h1 style="text-align:center">📊 SMART DASHBOARD</h1>
+
+<!-- CARDS -->
+
+
+
+
+<!-- 🟦 STATS CARDS (TOP) -->
+<div class="dashboard">
+
+    <div class="dash-card">
+        <h3>Total</h3>
+        <p id="total">0</p>
+    </div>
+
+    <div class="dash-card">
+        <h3>Pending</h3>
+        <p id="pending">0</p>
+    </div>
+
+    <div class="dash-card">
+        <h3>Resolved</h3>
+        <p id="resolved">0</p>
+    </div>
+
+</div>
+
+<!-- 📊 CHARTS SIDE BY SIDE -->
+<div class="chart-container">
+
+    <div class="chart-box">
+        <canvas id="pieChart"></canvas>
+    </div>
+
+    <div class="chart-box">
+        <canvas id="barChart"></canvas>
+    </div>
+
+</div>
+
+<!-- 🧠 INSIGHT -->
+<div class="card" style="margin-right:20px">
+    <h3>🧠 AI Insight</h3>
+    <p id="insight"></p>
+</div>
+<script src="app.js"></script>
+<script>
+stats();
+setInterval(stats, 5000);
+</script>
+
+
+
+
+</body>
+</html>

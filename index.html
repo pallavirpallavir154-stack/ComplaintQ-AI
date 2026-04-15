@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<nav style="
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    padding:15px;
+    background:rgba(0,0,0,0.3);
+    backdrop-filter:blur(10px);
+">
+    <a href="index.html" style="color:white">Home</a>
+    <a href="submit.html" style="color:white">Submit</a>
+    <a href="track.html" style="color:white">Track</a>
+    <a href="complaints.html" style="color:white">Dashboard</a>
+</nav>
+</head>
+<body>
+
+
+<h1 class="title" data-aos="fade-up">🚀 PUBLICPULSE AI</h1>
+
+<p class="subtitle" data-aos="fade-up" data-aos-delay="200">
+Smart Civic Complaint Intelligence System 🏛️
+</p>
+
+<h2 class="typewriter" data-aos="fade-up" data-aos-delay="400">
+Reporting Problems. Empowering Cities. Fixing Faster.
+</h2>
+
+<div class="image-row" data-aos="zoom-in" data-aos-delay="600">
+    <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d">
+    <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee">
+    <img src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1">
+</div>
+
+<!-- 🤖 CHATBOT -->
+<div id="chatbot">
+    <div id="chatbox">
+        <div id="chatlog">Hi 👋 I am PublicPulse AI</div>
+        <input id="msg" placeholder="Ask me anything...">
+        <button onclick="chat()">Send</button>
+    </div>
+</div>
+<div class="center-container">
+
+    <h1 class="title">🚀 PUBLICPULSE AI</h1>
+
+    <p style="text-align:center;opacity:0.8">
+        Smart Civic Complaint Intelligence System
+    </p>
+
+    <button onclick="location.href='submit.html'">
+        Get Started
+    </button>
+
+</div>
+
+<!-- AOS INIT -->
+<script>
+AOS.init();
+</script>
+
+</body>
+</html>

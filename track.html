@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+<nav style="
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    padding:15px;
+    background:rgba(0,0,0,0.3);
+    backdrop-filter:blur(10px);
+">
+    <a href="index.html" style="color:white">Home</a>
+    <a href="submit.html" style="color:white">Submit</a>
+    <a href="track.html" style="color:white">Track</a>
+    <a href="complaints.html" style="color:white">Dashboard</a>
+</nav>
+</head>
+<body>
+
+
+
+<div class="center-container">
+
+    <div class="card">
+
+        <h2>🔎 Track Complaint</h2>
+
+        <input id="cid" placeholder="Enter Complaint ID">
+
+        <button onclick="track()">Track</button>
+
+        <p id="out"></p>
+
+    </div>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
